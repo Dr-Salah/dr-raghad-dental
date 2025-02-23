@@ -1,0 +1,26 @@
+.page {
+    height: 100vh;
+    margin: 0px;
+}
+
+body {
+    margin: 0px;
+}
+
+#first {
+    background-color: beige;
+}
+
+#third {
+    background-color: beige;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header button {
+    border-radius: 15px;
+}
