@@ -1,6 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
+
+* {
+    font-family: "Josefin Sans", serif, monospace;
+    /* font-family: 'Courier New', Courier; */
+    /* border: 1px red solid; */
+}
+
+
 .page {
     height: 100vh;
     margin: 0px;
+    display: flex;
+    flex-direction: column;
+    font-weight: bold;
+    padding: 1rem;
 }
 
 body {
@@ -8,19 +21,103 @@ body {
 }
 
 #first {
-    background-color: beige;
+    background-color: #deebed;
+}
+
+#second {
+    background-color: #6aa29e;
 }
 
 #third {
-    background-color: beige;
+    background-color: #deebed;
 }
 
 .header {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    flex-grow: 0;
 }
 
-.header button {
-    border-radius: 15px;
+.header ul {
+    display: flex;
+    list-style: none;
 }
+
+.header ul li {
+    margin: 5px;
+    padding: 12px;
+    
+}
+
+.header a {
+    text-decoration: none;
+    color: black;
+}
+
+.active {
+    background-color: #52555d;
+    border-radius: 18px;
+}
+
+.active a {
+    color: white;
+
+}
+
+.main {
+    display: flex;
+    margin: auto 12px;
+    align-items: center;
+    justify-content: space-around;
+    max-height: 80%;
+    flex-grow: 1;
+    max-width: 100%;
+}
+
+.main img {
+    max-width: 50%;
+    max-height: 100%;
+    border-top-left-radius: 20%;
+    box-shadow: -10px -10px 2px black;
+}
+
+.main h2 {
+    font-size: 48px;
+}
+
+.services {
+    height: 60%;
+    border: 1px red solid;
+    display: flex;
+    flex-direction: column;
+}
+
+.cards {
+    display: flex;
+    height: 60%;
+    width: 100%;
+    /* flex-wrap: wrap; */
+    gap: 10px;
+}
+
+.card {
+    max-height: 100%;
+    width: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.card img {
+    max-width: 100%;
+}
+
+.map {
+    box-shadow: 10px 10px 5px grey;
+}
+
+h1 {
+    color: #06070E;
+}
+
+/* #112748,#6aa29e,#deebed,#c4955d,#52555d */
