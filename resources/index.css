@@ -23,7 +23,8 @@ body {
 #first {
     background-color: #deebed;
     justify-content: space-between;
-}
+    text-align: centerd;
+    }
 
 #second {
     background-color: #6aa29e;
@@ -39,8 +40,10 @@ body {
     justify-content: space-between;
     flex-grow: 0;
     background-color: #112748;
-    padding: 1rem 2rem;
-    
+    padding: 0px 2rem;
+    height: 6rem;
+    position: fixed;
+    width: 100vw;
 }
 
 .header ul {
@@ -59,7 +62,7 @@ body {
     color: white;
 }
 
-.active {
+/* .active {
     background-color: #52555d;
     border-radius: 18px;
 }
@@ -67,7 +70,7 @@ body {
 .active a {
     color: white;
 
-}
+} */
 
 .main {
     display: flex;
@@ -76,6 +79,7 @@ body {
     max-height: 90%;
     flex-grow: 1;
     max-width: 100%;
+    margin-top: 6rem;
 }
 
 .main img {
@@ -150,7 +154,7 @@ h1 {
     font-size: 2rem;
 }
 
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 800px) {
     
     .page {
         height: auto;
