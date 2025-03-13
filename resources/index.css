@@ -7,9 +7,15 @@
     box-sizing: border-box;
 }
 
+:root {
+    --primary: rgb(63, 140, 228);
+    --secondary: rgb(189, 189, 101);
+    --background: white;
+    --sbg: rgb(180, 180, 180);
+    
+}
 
 .page {
-    height: 100vh;
     margin: 0px;
     display: flex;
     flex-direction: column;
@@ -21,17 +27,17 @@ body {
 }
 
 #first {
-    background-color: #deebed;
+    background-image: linear-gradient(var(--primary), var(--background));
     justify-content: space-between;
-    text-align: centerd;
+    text-align: center;
     }
 
 #second {
-    background-color: #6aa29e;
+    background-color: var(--sbg);
 }
 
 #third {
-    background-color: #deebed;
+    background-color: var(--background);
 }
 
 .header {
@@ -39,10 +45,9 @@ body {
     align-items: center;
     justify-content: space-between;
     flex-grow: 0;
-    background-color: #112748;
+    /* background-color: var(--primary); */
     padding: 0px 2rem;
     height: 6rem;
-    position: fixed;
     width: 100vw;
 }
 
@@ -59,7 +64,7 @@ body {
 
 .header a {
     text-decoration: none;
-    color: white;
+    color: var(--secondary);
 }
 
 /* .active {
@@ -76,23 +81,42 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-around;
-    max-height: 90%;
-    flex-grow: 1;
-    max-width: 100%;
-    margin-top: 6rem;
+    width: 100%;
+    padding: 5%;
+    gap: 10%;
 }
 
 .main img {
-    max-height: 100%;
-    max-width: auto;
+    flex: 1 1 0px;
+    height: auto;
+    max-width: 30%;
+    border-top-left-radius: 10rem;
+    border-bottom-right-radius: 10rem;
 }
 
 .main h2 {
     font-size: 48px;
 }
 
+.main h2 span {
+    /* color: var(--secondary); */
+    font-family: "Dancing Script";
+}
+
+.wa {
+    background-color: green;    
+    padding: 1em 1.5em;
+    border-radius: 1em;
+    border: none;
+}
+
+.wa a, .wa i {
+    color: white;
+    text-decoration: none;
+}
+
 .left {
-    padding: 3rem;
+    flex: 1 1 0px;
 }
 
 .services {
@@ -101,6 +125,7 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
+    padding: 3rem 1rem;
 }
 
 .cards {
@@ -119,8 +144,8 @@ body {
     flex-direction: column;
     flex-basis: 2px;
     flex-grow: 1;
-    background-color: white;
-    border: 3px solid black;
+    background-color: var(--background);
+    border: 3px solid var(--primary);
     /* border-radius: 3px; */
 }
 
@@ -130,7 +155,8 @@ body {
 }
 
 .map {
-    box-shadow: 10px 10px 5px grey;
+    box-shadow: 10px 10px 5px var(--primary);
+    margin: 3rem;
 }
 
 h1 {
@@ -166,7 +192,7 @@ h1 {
     }
 
     .main {
-        flex-direction: column;
+        flex-direction: column-reverse;
     }
 
     .cards {
@@ -175,5 +201,7 @@ h1 {
 
     .main img {
         width: 100vw;
+        border-top-left-radius: 3rem;
+        border-bottom-right-radius: 3rem;
     }
 }
