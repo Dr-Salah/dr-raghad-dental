@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap');
 * {
-    font-family: "Josefin Sans", serif, monospace;
+    /* font-family: "Josefin Sans", serif, monospace; */
     /* font-family: 'Courier New', Courier; */
     /* border: 1px red solid; */
     box-sizing: border-box;
@@ -11,7 +11,7 @@
     --primary: rgb(63, 140, 228);
     --secondary: rgb(189, 189, 101);
     --background: white;
-    --sbg: rgb(180, 180, 180);
+    --sbg: rgb(219, 219, 219);
     
 }
 
@@ -27,7 +27,7 @@ body {
 }
 
 #first {
-    background-image: linear-gradient(var(--primary), var(--background));
+    background-image: linear-gradient(var(--primary) 0%, var(--background) 40%, var(--background) 100%);
     justify-content: space-between;
     text-align: center;
     }
@@ -119,6 +119,19 @@ body {
     flex: 1 1 0px;
 }
 
+.left a, .intro {
+    font-family: "Marhey", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+/* .intro {
+    font-family: "Aref Ruqaa", serif;
+    font-weight: 400;
+    font-style: normal;
+} */
+
 .services {
     height: 60%;
     /* border: 1px red solid; */
@@ -157,10 +170,13 @@ body {
 .map {
     box-shadow: 10px 10px 5px var(--primary);
     margin: 3rem;
+    box-sizing: border-box;
+    max-width: 100vw;
+    height: auto;
 }
 
 h1 {
-    color: #deebed;
+    color: var(--background);
 }
 
 /* #112748,#6aa29e,#deebed,#c4955d,#52555d */
@@ -176,7 +192,6 @@ h1 {
 }
 
 #first p{
-    font-family: "Dancing Script";
     font-size: 2rem;
 }
 
@@ -201,7 +216,15 @@ h1 {
 
     .main img {
         width: 100vw;
-        border-top-left-radius: 3rem;
-        border-bottom-right-radius: 3rem;
+        border-top-left-radius: 1rem;
+        border-bottom-right-radius: 1rem;
+    }
+
+    .left {
+        padding: 2rem;
+    }
+
+    .services {
+        padding: 2rem 0px;
     }
 }
