@@ -1,18 +1,20 @@
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap');
+:root {
+    --primary: rgb(63, 140, 228);
+    --secondary: rgb(189, 189, 101);
+    --background: rgb(20, 20, 20);
+    --sbg: rgb(0, 9, 39);
+    --tbg: rgb(36, 36, 36);
+    --text: rgb(255, 249, 194);
+}
+
 * {
     /* font-family: "Josefin Sans", serif, monospace; */
     /* font-family: 'Courier New', Courier; */
     /* border: 1px red solid; */
     box-sizing: border-box;
-}
-
-:root {
-    --primary: rgb(63, 140, 228);
-    --secondary: rgb(189, 189, 101);
-    --background: white;
-    --sbg: rgb(219, 219, 219);
-    
+    color: var(--text);
 }
 
 .page {
@@ -27,13 +29,13 @@ body {
 }
 
 #first {
-    background-image: linear-gradient(var(--primary) 0%, var(--background) 40%, var(--background) 100%);
+    background-image: linear-gradient(var(--sbg) 0%, var(--background) 40%, var(--background) 100%);
     justify-content: space-between;
     text-align: center;
     }
 
 #second {
-    background-color: var(--sbg);
+    background-color: var(--tbg);
 }
 
 #third {
@@ -111,7 +113,7 @@ body {
 }
 
 .wa a, .wa i {
-    color: white;
+    color: var(--text);
     text-decoration: none;
 }
 
@@ -157,14 +159,18 @@ body {
     flex-direction: column;
     flex-basis: 2px;
     flex-grow: 1;
-    background-color: var(--background);
+    background-color: var(--tbg);
     border: 3px solid var(--primary);
     /* border-radius: 3px; */
+    text-align: center;
+    border-radius: 1rem;
 }
 
 .card img {
     max-width: 100%;
     height: auto;
+    margin-bottom: auto;
+    border-radius: 1rem;
 }
 
 .map {
@@ -176,7 +182,7 @@ body {
 }
 
 h1 {
-    color: var(--background);
+    color: var(--text);
 }
 
 /* #112748,#6aa29e,#deebed,#c4955d,#52555d */
@@ -193,6 +199,14 @@ h1 {
 
 #first p{
     font-size: 2rem;
+}
+
+.icons img {
+    border-radius: 5%;
+}
+
+.icons {
+    max-width: 30vw;
 }
 
 @media only screen and (max-width: 800px) {
@@ -226,5 +240,9 @@ h1 {
 
     .services {
         padding: 2rem 0px;
+    }
+
+    .icons img {
+        border-radius: 5%;
     }
 }
