@@ -29,7 +29,7 @@ body {
 }
 
 #first {
-    background-image: linear-gradient(var(--sbg) 0%, var(--background) 40%, var(--background) 100%);
+    background-image: linear-gradient(var(--sbg) 0%, var(--background) 40%, var(--background) 80%, var(--tbg) 100%);
     justify-content: space-between;
     text-align: center;
     }
