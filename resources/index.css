@@ -3,10 +3,10 @@
 :root {
     --primary: rgb(63, 140, 228);
     --secondary: rgb(189, 189, 101);
-    --background: rgb(20, 20, 20);
-    --sbg: rgb(0, 9, 39);
-    --tbg: rgb(36, 36, 36);
-    --text: rgb(255, 249, 194);
+    --background: rgb(255, 255, 255);
+    --sbg: rgb(138, 164, 248);
+    --tbg: rgb(187, 187, 187);
+    --text: rgb(37, 37, 37);
 }
 
 * {
@@ -159,11 +159,11 @@ body {
     flex-direction: column;
     flex-basis: 2px;
     flex-grow: 1;
-    background-color: var(--tbg);
-    border: 3px solid var(--primary);
-    /* border-radius: 3px; */
+    background-color: var(--background);
+    /* border: 3px solid var(--primary); */
     text-align: center;
     border-radius: 1rem;
+    box-shadow: 3px 3px 2px var(--primary);
 }
 
 .card img {
@@ -199,6 +199,7 @@ h1 {
 
 #first p{
     font-size: 2rem;
+    padding: 0px 2rem;
 }
 
 .icons img {
