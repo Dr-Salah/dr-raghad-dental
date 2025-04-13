@@ -170,3 +170,19 @@ h1 {
 footer {
     color: #284A5E;
 }
+
+@media only screen and (min-width: 600px) {
+    .cards {
+        flex-direction: row;
+    }
+
+    #first {
+        background-size: cover;
+        background-position: center;
+        background-image: url(./images/desktop.jpg);
+    } 
+
+    .last {
+        display: flex;
+    }
+}
